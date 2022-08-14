@@ -39,7 +39,7 @@ func run(source string) {
 
 // In the book this is called error, does not work
 // in Golang since error is a reserved keyword
-func loxError(line int, message string) {
+func LoxError(line int, message string) {
 
 }
 

@@ -164,8 +164,8 @@ type Token struct {
 	line      int
 }
 
-func NewToken(tokenType TokenType, lexeme string, literal Object, line int) Token {
-	return Token{tokenType, lexeme, literal, line}
+func NewToken(tokenType TokenType, lexeme string, literal *Object, line int) Token {
+	return Token{tokenType, lexeme, *literal, line}
 }
 
 func (t *Token) String() string {
