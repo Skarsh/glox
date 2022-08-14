@@ -33,11 +33,13 @@ func runPrompt() {
 }
 
 func run(source string) {
-	scanner := Scanner{source}
+	scanner := NewScanner(source)
 	scanner.scanTokens()
 }
 
-func error(line int, message string) {
+// In the book this is called error, does not work
+// in Golang since error is a reserved keyword
+func loxError(line int, message string) {
 
 }
 
